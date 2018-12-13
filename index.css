@@ -1,6 +1,28 @@
 .innercontent {
-   background-color: red;
+   background-color: white;
+   border: solid 1px green;
     height: 667px;
-    width: 375px;
-    margin-top: 25px;
+    width: 395px;
+    margin-top: 55px;
+    margin-left: 84px;
+    z-index: 10;
+}
+
+/* body{
+    background-image: url(backgroundimg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 515px 900px;
+} */
+
+.fa-mobile-alt {
+    font-size: 900px;
+}
+.everything {
+    position: relative;
+}
+
+.backgroundimg, .Content {
+    position: absolute;
+    margin-left: 450px;
 }
