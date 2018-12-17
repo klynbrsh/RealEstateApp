@@ -2,19 +2,27 @@
    background-color: white;
    border: solid 1px green;
     height: 667px;
-    width: 395px;
-    margin-top: 55px;
+    width: 375px;
+    margin-top: 85px;
     margin-left: 84px;
     z-index: 10;
 }
 
-/* body{
-    background-image: url(backgroundimg.jpg);
+body{
+    background-image: url(phoneimage.png);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 515px 900px;
-} */
+    background-position-x: 513px;
+    background-attachment: fixed;
+    /* background-position: center; */
+    /* background-size: 515px 900px; */
+}
+.container {
+    height: 650; 
+    width:300;
+    color: grey;
 
+
+}
 .fa-mobile-alt {
     font-size: 900px;
 }
@@ -25,4 +33,54 @@
 .backgroundimg, .Content {
     position: absolute;
     margin-left: 450px;
+}
+
+#photo-button {
+    background-color: transparent;
+    color: gray;
+    border-color: gray
+    }
+    
+    #photo-icon {
+      font-size:50px;
+      color: #C2D1D9;
+      background-color: #F2F5F7;
+      text-align: center;
+      margin: 5px;
+    }
+    
+    
+    #submit-button{
+       background: #424B5A;
+       padding-left: 50px;
+       padding-right: 50px;
+       font-size: 14px;
+    }
+    
+    .btn1 {
+
+        background-color: #00C2BF;
+        border: none;
+        color: white;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 12px;
+        padding: 12px 65px;
+        width: 50%;
+        display: block; margin: 0 auto;
+        }
+        
+        .form-group .fa {
+        
+        padding-left: 1rem;
+        padding-right: 1rem;
+        
+        }
+        
+.fa-minus {
+    color: #FDEC00;
+}
+
+.fa-plus {
+    color: #FDEC00;
 }
