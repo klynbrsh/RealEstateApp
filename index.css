@@ -36,9 +36,10 @@ body{
 }
 
 #photo-button {
-    background-color: transparent;
-    color: gray;
-    border-color: gray
+    background-color: #FDEC00;
+    color: black;
+    font-size: 16px;
+    
     }
     
     #photo-icon {
@@ -50,13 +51,6 @@ body{
     }
     
     
-    #submit-button{
-       background: #424B5A;
-       padding-left: 50px;
-       padding-right: 50px;
-       font-size: 14px;
-    }
-    
     .btn1 {
 
         background-color: #00C2BF;
@@ -64,8 +58,8 @@ body{
         color: white;
         border-radius: 4px;
         text-align: center;
-        font-size: 12px;
-        padding: 12px 65px;
+        font-size: 16px;
+        padding: 12px 65px 12px;
         width: 50%;
         display: block; margin: 0 auto;
         }
@@ -89,7 +83,8 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 75px;
+    height:100px;
  }
  
  .flexrow {
@@ -97,7 +92,7 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width:100;
  }
  
  .flexrow input {
@@ -105,7 +100,7 @@ body{
  }
  
  .inputbox, .button, .thex {
-    font-size: 14pt;
+    font-size: 16pt;
  }
  
  .inputbox {
@@ -144,4 +139,46 @@ body{
     padding-right: 15px;
  }
  
- 
+ .textbox {
+     margin-left: 23px;
+ }
+
+ .textboxhe {
+     height: 35px;
+ }
+
+ .headerrules {
+        background-color: #00C2BF;
+        border: none;
+        color: white;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 16px;
+        padding: 12px 65px 12px;
+        width: 50%;
+        display: block; margin: 0 auto;
+        }
+
+.rentbtn1 {
+    border: solid 15px #00C2BF;
+    color: black;
+    background-color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 65px;
+    width: 50%;
+    border-radius: 4px;
+    display: block; margin: 0 auto;
+    }
+    
+.rentbtn2 {
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 65px;
+    width: 100%;
+    display: block; margin: 0 auto;
+    }
+          
