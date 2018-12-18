@@ -15,11 +15,11 @@
             .innercontent {
                 background-color: white;
                 border: solid 1px green;
-                height: 3700px;
+                height: 4700px;
                 width: 375px;
                 margin-top: 115px;
                 margin-left: 94px;
-                z-index: 10;
+                z-index: 2;
                 }
             </style>
 </head>
@@ -31,7 +31,7 @@
           <div class="innercontent">
 <!-- Address Page -->
         <br>
-        <div class="container">
+        <div class="container" id="addresspg">
                 <div class="row" style="padding:20px; font-size: 25px; color: #C2D1D9; ">
                         <div class="col-sm-2">
                                 
@@ -97,19 +97,25 @@
         </div>
         </div>
             <br><br>
+        <a href="#RentPg1">
         <div>
-            <button type="Next" class="btn1 btn1">NEXT</button>
+            <button id="RentPg1" type="Next" class="btn1 btn1" >NEXT</button>
         </div>
+    </a>
             </form>
         </div>
+   
         <br><br><hr><br>
 <!-- Rent Page 1 -->
         <br>
-        <div id="RentPg1" class="container">
+        
+        <div  class="container">
         <div class="row" style="padding:20px; font-size: 25px; color: #C2D1D9; ">
+            <a href="#addresspg">
             <div class="col-sm-2">
                     <i class="fas fa-arrow-left" style="color:#FDEC00;"></i>
             </div>
+        </a>
             <div class="col-sm-8" style="text-align:center; color: #65717A">
                 <h3 style="color:#00C2BF;">Rent</h3>
             </div>
@@ -130,7 +136,7 @@
                   <input type="password" class="form-control" id="pwd" placeholder="27th of every month" name="pswd">
                 </div>
                 <div>
-                    <button class="rentbtn1 rentbtn1" style=" width:100%; border:solid 3px #00C2BF; color: #00C2BF; font-size:16px;">Bedroom 1</button>
+                    <div class="rentbtn1 rentbtn1" style=" width:100%; border:solid 3px #00C2BF; color: #00C2BF; font-size:16px;">Bedroom 1</div>
                 </div><br>
                 <div>
                     <button class="rentbtn1 rentbtn1" style=" width:100%; border:solid 3px #00C2BF; color: #00C2BF; font-size:16px;">Bedroom 2</button>
@@ -138,19 +144,23 @@
                 <div>
                     <button class="rentbtn1 rentbtn1" style=" width:100%; border:solid 3px #00C2BF; color: #00C2BF; font-size:16px;">Bedroom 3</button>
                 </div><br><br><br>
-
-                <div>
-                    <button type="Next" class="btn1 btn1">NEXT</button>
-                </div>
+                <a href="#RentPg2">
+                    <div>
+                        <button type="Next" class="btn1 btn1" >NEXT</button>
+                    </div>
+                </a>
          </div>
+        
          <br><br><hr><br>
 <!-- Rent Page two -->
 
 <div id="RentPg2" class="container">
         <div class="row" style="padding:20px; font-size: 25px; color: #C2D1D9; ">
+            <a href="#RentPg1">
                 <div class="col-sm-2">
-                        <i class="fas fa-arrow-left" style="color:#FDEC00;" ></i>  
+                        <i class="fas fa-arrow-left" style="color:#FDEC00;"></i>
                 </div>
+            </a>
                 <div class="col-sm-8" style="text-align:center; color: #65717A">
                     <h3 style="color:#00C2BF;">Rent</h3>
                 </div>
@@ -162,44 +172,107 @@
         <button class="btn1 btn1" style=" width:100%; background-color:#FDEC00; color:black; font-size:16px;">+ Upload Rental Agreement</button>
     </div>
     <br>
- <div class="form-group">
-        <input type="number" class="form-control" id="total" placeholder="Month Total" name="total">
-    </div>
     <div class="form-group">
-        <input type="date" class="form-control" id="duedate" placeholder="Due Date" name="duedate">
-    </div>
-        <form action="/action_page.php">
+            <input type="location" class="form-control" id="email" placeholder="$2,500" name="email">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" id="pwd" placeholder="27th of every month" name="pswd">
+          </div>
+    <div class=“dropdown”>
             <div>
-                <button class="rentbtn1 rentbtn1" style=" width:100%; border:solid 3px #00C2BF; color: #00C2BF; font-size:16px;">Bedroom 1</button>
-            </div>
-            <input class="inputbox" type="text" name="roomname" placeholder="Room name" required>
-   
-            <div class="flexrow">
-                <input class="inputbox sqfootbox" type="text" name="roomfeet" placeholder="FT" required>
-                <span class="thex">X</span>
-                <input class="inputbox sqfootbox" type="text" name="roomfeet" placeholder="FT" required>
-                <span class="thex">= Sq. Ft.</span>
-            </div>
+                    <button class="rentbtn1 rentbtn1 dropdown-toggle" style=" width:100%; border:solid 3px #00C2BF; color: #00C2BF; font-size:16px;">Bedroom 1</button>
+                </div>
+        <div class=“dropdown-menu” aria-labelledby=“dropdownMenuButton”>
+            <div class="notification-drop-down">
+                <input class="inputbox" type="text" name="roomname" placeholder="Room name" required>
 
-            <input class="inputbox" type="text" name="roomcost" placeholder="Room cost" required>
-           
-            <input class="inputbox" type="text" name="notesaboutroom" placeholder="Notes about room" required>
-            <div class="flexrow">
-                <a class="button" href="#">Clear</a>
-                <a class="button" id="addbutton">Add</a>
+                <div class="flexrow">
+                    <input class="inputbox sqfootbox" type="text" name="roomfeet" placeholder="FT" required>
+                    <span class="thex">X</span>
+                    <input class="inputbox sqfootbox" type="text" name="roomfeet" placeholder="FT" required>
+                    <span class="thex">= Sq. Ft.</span>
+                </div>
+    
+                <input class="inputbox" type="text" name="roomcost" placeholder="Room cost" required>
+               
+                <input class="inputbox" type="text" name="notesaboutroom" placeholder="Notes about room" required>
+                <div class="flexrow">
+                    <a class="button" style="background-color: white; height:35px;">Clear</a>
+                    <a class="button" href="#rentpg3" id="addbutton" style="height:35px;">Add</a>
+                </div>
             </div>
-            <div>
-                <button type="Next" class="btn1 btn1">NEXT</button>
-            </div>
-          </form>
         </div>
+       </div>
+       <br>
+       <div>
+            <button class="rentbtn1 rentbtn1" style=" width:100%; border:solid 3px #00C2BF; color: #00C2BF; font-size:16px;">Bedroom 2</button>
+        </div><br>
+        <div>
+            <button class="rentbtn1 rentbtn1" style=" width:100%; border:solid 3px #00C2BF; color: #00C2BF; font-size:16px;">Bedroom 3</button>
+        </div>
+            </div>
+            <br>
+            <a href="#rentpg3">
+                <div>
+                    <button type="Next" id="rentpg3" class="btn1 btn1" >NEXT</button>
+                </div>
+            </a>
+        
           <br><br><hr><br>
+<!-- Rent Pg 3 -->
+<br>
+
+<div class="container">
+<div class="row" style="padding:20px; font-size: 25px; color: #C2D1D9; ">
+    <a href="#RentPg2">
+        <div class="col-sm-2">
+                <i class="fas fa-arrow-left" style="color:#FDEC00;"></i>
+        </div>
+    </a>
+    <div class="col-sm-8" style="text-align:center; color: #65717A">
+        <h3 style="color:#00C2BF;">Rent</h3>
+    </div>
+    <div class="col-sm-2">
+          
+    </div>
+</div>  
+<div>
+<button class="btn1 btn1" style=" width:100%; background-color:#FDEC00; color:black; font-size:16px;">+ Upload Rental Agreement</button>
+</div>
+    <br>
+
+    <form action="/action_page.php">
+        <div class="form-group">
+          <input type="location" class="form-control" id="email" placeholder="$2,750" name="email">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" id="pwd" placeholder="1st of the month" name="pswd">
+        </div>
+        <div>
+            <button class="rentbtn1 rentbtn1" style=" width:100%; border:solid 3px #00C2BF; color: #00C2BF; font-size:16px;">Malik's Room</button>
+        </div><br>
+        <div>
+            <button class="rentbtn1 rentbtn1" style=" width:100%; border:solid 3px #00C2BF; color: #00C2BF; font-size:16px;">Bedroom 2</button>
+        </div><br>
+        <div>
+            <button class="rentbtn1 rentbtn1" style=" width:100%; border:solid 3px #00C2BF; color: #00C2BF; font-size:16px;">Bedroom 3</button>
+        </div><br><br><br>
+        <a href="#amenitites">
+            <div>
+                <button id="amenitites" type="Next" class="btn1 btn1" >NEXT</button>
+            </div>
+        </a>
+ </div>
+ <br><br><hr><br>
     <!-- Amenities Page -->
-            <div id="amenitites">
+   
+            <div>
                         <div class="row" style="padding:20px; font-size: 25px; color: #C2D1D9; ">
+                            <a href="#rentpg3">
                                 <div class="col-sm-2">
                                         <i class="fas fa-arrow-left" style="color:#FDEC00;"></i>
                                 </div>
+                            </a>
                                 <div class="col-sm-8" style="text-align:center; color: #65717A">
                                     <h3 style="color:#00C2BF;">Amenities</h3>
                                 </div>
@@ -296,17 +369,22 @@
                                 </div>
                             </div>
                        
-                            <div>
-                                <button type="Next" class="btn1 btn1">NEXT</button>
-                            </div>
+                            <a href="#houserules">
+                                <div>
+                                    <button  id="houserules" type="Next" class="btn1 btn1" >NEXT</button>
+                                </div>
+                            </a>
             </div>
                                 <br><br><hr><br>
  <!-- House Rules Page -->
- <div id="amenitites">
+
+ <div>
     <div class="row" style="padding:20px; font-size: 25px; color: #C2D1D9; ">
+        <a href="#amenities">
             <div class="col-sm-2">
                     <i class="fas fa-arrow-left" style="color:#FDEC00;"></i>
             </div>
+        </a>
             <div class="col-sm-8" style="text-align:center; color: #65717A">
                 <h3 style="color:#00C2BF;">House Rules</h3>
             </div>
@@ -314,16 +392,18 @@
                 
             </div>
     </div>   
-    <div class="row">
-        <div class="col-1"> </div>
-        <div>
-            <button class="btn1 btn1" style=" width:100%; background-color:#FDEC00; color:black; font-size:16px; margin-left:12px;">Skip</button>
+    <div class="container">
+        <div class="row">
+            <div class="col-1"> </div>
+            <div>
+                <button class="btn1 btn1" style=" width:175%; background-color:#FDEC00; color:black; font-size:16px; margin-left:12px;">SKIP</button>
+            </div>
+            <div class="col-1"> </div>
+        </div>      
         </div>
-        <div class="col-1"> </div>
-    </div> 
     <br>
     <div class="headerrules" style=" width:300px; background-color: #00C2BF;">
-        <h3 style="font-size:16px; text-align: left;">Quiet Hours</h3>
+        <h3 style="font-size:16px; text-align: center;">Quiet Hours</h3>
     </div>
     <div class="container">
         <div class="row">
@@ -332,10 +412,43 @@
             </div>
         </div>
     </div>
-    <div>
-        <button type="Next" class="btn1 btn1">SUBMIT</button>
+    <div class="headerrules" style=" width:300px; background-color: #00C2BF;">
+         <h3 style="font-size:16px; text-align: center;">Overnight Guests</h3>
+     </div>
+     <div class="container">
+         <div class="row">
+             <div class="form-group col textbox">
+               <textarea class="form-control" style="width:300px;" placeholder="We recommend having guests only stay for a max of 1-3 days based off other users rules." rows="3"></textarea>
+             </div>
+         </div>
+     </div>
+     <div class="headerrules" style=" width:300px; background-color: #00C2BF;">
+             <h3 style="font-size:16px; text-align: center;">Other</h3>
+         </div>
+         <div class="container">
+             <div class="row">
+                 <div class="form-group col textbox">
+                   <textarea class="form-control" style="width:300px;" placeholder="We recommend adding rules on pets, maintenance, and household cleaning. " rows="3"></textarea>
+                 </div>
+             </div>
+         </div>
+         <div class="row">
+                 <div class="col-1"> </div>
+                 <div>
+                     <button class="btn1 btn1" style=" width:145%; background-color:#FDEC00; color:black; font-size:16px; margin-left:12px;">ADD MORE</button>
+                 </div>
+                 <div class="col-1"> </div>
+             </div>
+    <div>  
+        <br>
+    <a href="dashboard.html">
+        <div>
+            <button type="Next" class="btn1 btn1" >SUBMIT</button>
+        </div>
+    </a>
     </div>
 </div>
-         
+</div>
+</div>      
 </body>
 </html>

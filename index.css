@@ -111,6 +111,7 @@ body{
     margin: 15px;
     padding: 10px;
     width: calc(100% - 50px);
+    height: 35px;
  }
  
  .button {
@@ -123,8 +124,6 @@ body{
     width: 100%;
     text-align: center;
     margin: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
     text-transform: uppercase;
  }
  
@@ -181,4 +180,14 @@ body{
     width: 100%;
     display: block; margin: 0 auto;
     }
-          
+    
+.notification-drop-down {
+    background-color:#00C2BF30;
+}
+
+.CARD {
+    width: 365px;
+    height: 653px;
+    color: white;
+    z-index: 11;
+}
