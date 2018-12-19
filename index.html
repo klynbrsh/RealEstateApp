@@ -10,7 +10,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>CASA|SHARE-Onboarding</title>
     <style>
             .innercontent {
                 background-color: white;
@@ -135,9 +135,10 @@
                 <div class="form-group">
                   <input type="password" class="form-control" id="pwd" placeholder="27th of every month" name="pswd">
                 </div>
+                <a href="#rentbreak">
                 <div>
                     <div class="rentbtn1 rentbtn1" style=" width:100%; border:solid 3px #00C2BF; color: #00C2BF; font-size:16px;">Bedroom 1</div>
-                </div><br>
+                </div></a><br>
                 <div>
                     <button class="rentbtn1 rentbtn1" style=" width:100%; border:solid 3px #00C2BF; color: #00C2BF; font-size:16px;">Bedroom 2</button>
                 </div><br>
@@ -164,7 +165,7 @@
                 <div class="col-sm-8" style="text-align:center; color: #65717A">
                     <h3 style="color:#00C2BF;">Rent</h3>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-sm-2"id="rentbreak">
                       
                 </div>
  </div>
@@ -184,18 +185,18 @@
                 </div>
         <div class=“dropdown-menu” aria-labelledby=“dropdownMenuButton”>
             <div class="notification-drop-down">
-                <input class="inputbox" type="text" name="roomname" placeholder="Room name" required>
+                <input class="inputbox" type="text" name="roomname" placeholder="Room name">
 
                 <div class="flexrow">
-                    <input class="inputbox sqfootbox" type="text" name="roomfeet" placeholder="FT" required>
+                    <input class="inputbox sqfootbox" type="text" name="roomfeet" placeholder="FT">
                     <span class="thex">X</span>
-                    <input class="inputbox sqfootbox" type="text" name="roomfeet" placeholder="FT" required>
+                    <input class="inputbox sqfootbox" type="text" name="roomfeet" placeholder="FT">
                     <span class="thex">= Sq. Ft.</span>
                 </div>
     
-                <input class="inputbox" type="text" name="roomcost" placeholder="Room cost" required>
+                <input class="inputbox" type="text" name="roomcost" placeholder="Room cost">
                
-                <input class="inputbox" type="text" name="notesaboutroom" placeholder="Notes about room" required>
+                <input class="inputbox" type="text" name="notesaboutroom" placeholder="Notes about room">
                 <div class="flexrow">
                     <a class="button" style="background-color: white; height:35px;">Clear</a>
                     <a class="button" href="#rentpg3" id="addbutton" style="height:35px;">Add</a>
@@ -371,14 +372,14 @@
                        
                             <a href="#houserules">
                                 <div>
-                                    <button  id="houserules" type="Next" class="btn1 btn1" >NEXT</button>
+                                    <button type="Next" class="btn1 btn1" >NEXT</button>
                                 </div>
                             </a>
             </div>
                                 <br><br><hr><br>
  <!-- House Rules Page -->
 
- <div>
+ <div id="houserules">
     <div class="row" style="padding:20px; font-size: 25px; color: #C2D1D9; ">
         <a href="#amenities">
             <div class="col-sm-2">

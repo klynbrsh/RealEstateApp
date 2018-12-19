@@ -191,3 +191,132 @@ body{
     color: white;
     z-index: 11;
 }
+.amount-due {
+    height: 63px;
+    width: 375px;
+    background-color: #00C2BF;
+    padding: 10px;
+  }
+  
+  .header {
+    padding-bottom: 15px;
+  }
+  
+  .amount-due-text {
+    color: white;
+    float: left;
+  }
+  
+  .amount-due-total {
+    color: white;
+    float: right;
+  }
+  
+  .dashboard-notification {
+    height: 100px;
+    width: 345px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: black;
+    margin: auto;
+  }
+  
+  .dashboard-container {}
+  
+  .notification-text {
+    color: white;
+    width: 250px;
+    height: 50px;
+  }
+  
+  .dashboard-notification-dropdown {
+    height: 360px;
+    width: 325px;
+    padding-left: 25px;
+    padding-top: 15px;
+  }
+  
+  .notification-drop-down {
+    height: 344px;
+    width: 325px;
+    background-color:#00C2BF30;
+    position: relative;
+    margin: auto;
+  }
+  
+  .notification-text-dropdown {
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .notification-text-dropdown-note {
+    color: white;
+    width: 270px;
+    height: 63px;
+    margin: auto;
+  }
+  
+  .dashboard-notification-two {
+    height: 100px;
+    width: 345px;
+    padding-left: 15px;
+    padding-top: 15px;
+  }
+  
+  .col-12 {
+    background-color: yellow;
+    width: 325px;
+    height: 40px;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  .col-6 {
+    text-align: center;
+    padding: 15px;
+    height: 55px;
+    width: 163px;
+  }
+  
+  .col-7 {
+    color: black;
+  }
+  
+  .col-5 {
+    color: black;
+  }
+  
+  .myRow {
+    width: 373px;
+    height: 56px;
+    display: flex;
+  }
+  
+  .myCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    padding: 12px;
+    text-align: center;
+  
+    position:fixed;
+    bottom: -17px;
+  
+    background-color: #00C2BF;
+    color: white;
+  }
+  
+  .myCol a {
+    font-size: 12px;
+    margin: auto;
+  }
+
+  .icon {
+    width: 50%;
+    display:inline;
+    margin-left: 40px;
+    color:red;
+  }
