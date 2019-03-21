@@ -1,75 +1,72 @@
+* {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
 .innercontent {
-   background-color: white;
-   border: solid 1px green;
-    height: 667px;
-    width: 375px;
-    margin-top: 85px;
-    margin-left: 84px;
-    z-index: 10;
+    width: 100%;
 }
 
-body{
-    background-image: url(phoneimage.png);
-    background-repeat: no-repeat;
-    background-position-x: 513px;
-    background-attachment: fixed;
-    /* background-position: center; */
-    /* background-size: 515px 900px; */
-}
-.container {
-    height: 650; 
-    width:300;
-    color: grey;
-
-
-}
 .fa-mobile-alt {
     font-size: 900px;
 }
-.everything {
-    position: relative;
+
+.incrementor {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.backgroundimg, .Content {
-    position: absolute;
-    margin-left: 450px;
+.incrementor > * {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-top: .5rem;
+  margin-bottom: 1.7rem;
+}
+
+.spaceme {
+  margin-top: 2rem;
+}
+
+.spaceme .btn1 {
+  margin-bottom: 5rem;
 }
 
 #photo-button {
-    background-color: #FDEC00;
-    color: black;
-    font-size: 16px;
+  background-color: #FDEC00;
+  color: black;
+  font-size: 16px;    
+}
     
-    }
+.photo-icon {
+  font-size:50px;
+  color: #C2D1D9;
+  background-color: #F2F5F7;
+  text-align: center;
+  margin: 3px;
+  display: inline-block;
+  width: 22%;
+}
     
-    #photo-icon {
-      font-size:50px;
-      color: #C2D1D9;
-      background-color: #F2F5F7;
-      text-align: center;
-      margin: 5px;
-    }
     
-    
-    .btn1 {
-
-        background-color: #00C2BF;
-        border: none;
-        color: white;
-        border-radius: 4px;
-        text-align: center;
-        font-size: 16px;
-        padding: 12px 65px 12px;
-        width: 50%;
-        display: block; margin: 0 auto;
-        }
+.btn1 {
+  background-color: #00C2BF;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
+  padding: 12px 65px 12px;
+  width: 50%;
+  display: block; 
+  margin: 0 auto;
+}
         
-        .form-group .fa {
-        
-        padding-left: 1rem;
-        padding-right: 1rem;
-        
-        }
+.form-group .fa {    
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
         
 .fa-minus {
     color: #FDEC00;
@@ -80,30 +77,29 @@ body{
 }
 
 .form {
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: column;
-    width: 75px;
-    height:100px;
- }
+  display: flex;
+  flex-direction: column;
+  width: 75px;
+  height:100px;
+}
  
- .flexrow {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width:100;
- }
+  .flexrow {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width:100;
+  }
  
- .flexrow input {
+  .flexrow input {
     text-align: center;
- }
+  }
  
- .inputbox, .button, .thex {
+  .inputbox, .button, .thex {
     font-size: 16pt;
- }
+  }
  
- .inputbox {
+  .inputbox {
     border-radius: 6px;
     border-color: #778899;
     border-style: solid;
@@ -112,7 +108,7 @@ body{
     padding: 10px;
     width: calc(100% - 50px);
     height: 35px;
- }
+  }
  
  .button {
     border-radius: 6px;
@@ -193,7 +189,6 @@ body{
 }
 .amount-due {
     height: 63px;
-    width: 375px;
     background-color: #00C2BF;
     padding: 10px;
   }
@@ -221,8 +216,6 @@ body{
     background-color: black;
     margin: auto;
   }
-  
-  .dashboard-container {}
   
   .notification-text {
     color: white;
@@ -289,7 +282,6 @@ body{
   }
   
   .myRow {
-    width: 373px;
     height: 56px;
     display: flex;
   }
@@ -320,3 +312,27 @@ body{
     margin-left: 40px;
     color:red;
   }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  a:hover {
+    text-decoration: none !important;
+    color: #fff !important;
+  }
+
+.clearbutton {
+  width: 100%; 
+  border: solid 2px #00C2BF; 
+  color: #00C2BF; 
+  font-size: 16px;
+  margin-top: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.lastone {
+  padding-bottom: 1rem;
+}
